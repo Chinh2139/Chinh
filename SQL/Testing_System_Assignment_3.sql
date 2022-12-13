@@ -310,3 +310,10 @@ SET 	User_Name = 'Nguyễn Bá Lộc',
 UPDATE fresher.accountid
 SET Account_ID = 5
 WHERE Group_ID = 195;
+
+
+
+
+
+
+
