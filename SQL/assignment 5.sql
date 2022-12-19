@@ -280,3 +280,49 @@ WHERE Sl = (SELECT max(Sl) FROM Cte_2);
 
 --  Question 5:
 
+DROP PROCEDURE IF EXISTS sp_getDepNamById;
+DELIMITER $$
+CREATE PROCEDURE sp_getDepNamById(IN param1 TINYINT)
+BEGIN
+	-- SQL
+    SELECT DepartmentName FROM department WHERE DepartmentID = param1;
+END$$
+DELIMITER ;
+
+
+
+
+SELECT TypeName, count(1) AS SLcauhoi FROM `typequestion` Tq
+INNER JOIN `question` Q ON Tq.TypeID = Q.TypeID
+GROUP BY TypeName;
+
+DROP PROCEDURE IF EXISTS sp_IDcauhoi;
+DELIMITER $$
+CREATE PROCEDURE sp_IDcauhoi (IN cauhoi VARCHAR(50))
+BEGIN
+
+SELECT TypeName, count(1) AS SLcauhoi FROM `typequestion` Tq
+INNER JOIN `question` Q ON Tq.TypeID = Q.TypeID
+GROUP BY TypeName = cauhoi ;
+ 
+ END$$
+ DELIMITER ;
+
+CALL sp_IDcauhoi(Essay);
+
+
+
+
+
+SET GLOBAL log_bin_trust_function_creators = 1;
+DROP FUNCTION IF EXISTS fc_sum;
+
+DELIMITER $$   
+CREATE FUNCTION fc_sum(number1 INT, number2 INT) RETURNS INT  
+BEGIN  
+    DECLARE v_sum INT;
+    SET v_sum = number1 + number2;
+    RETURN v_sum;
+END $$
+SELECT fc_sum(10,15);
+
