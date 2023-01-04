@@ -116,7 +116,8 @@ SELECT * FROM SinhVienInfo;
 
 -- Questions 4:
 
-CREATE TRIGGER
+
+
 
 
 
