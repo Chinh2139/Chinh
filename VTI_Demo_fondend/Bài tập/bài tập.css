@@ -1,0 +1,26 @@
+.Container {
+  background-color: rgb(255, 255, 255);
+  width: 1200px;
+}
+.Main {
+  display: flex;
+}
+
+.Item1 {
+  background-color: rgb(166, 244, 164);
+  width: 400px;
+  height: 600px;
+}
+img .Item1 {
+  margin: 5px;
+}
+.Item2 {
+  background-color: rgb(245, 181, 181);
+  width: 400px;
+  height: 600px;
+}
+.Item3 {
+  background-color: rgb(160, 222, 239);
+  width: 400px;
+  height: 600px;
+}
