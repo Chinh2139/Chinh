@@ -1,9 +1,9 @@
 // Hàm xử lý khi nhấn Register
-//function registerclick() {
-// console.log("Nhập các thông tin sau đây");
-// window.open("Register.html", "_self");
-//Window.open("Register.html");
-//}
+function registerclick() {
+  console.log("Nhập các thông tin sau đây");
+  window.open("Register.html", "_self");
+  // Window.open("Register.html");
+}
 // Hàm xử lý khi nhấn nút reset
 function handleReset() {
   //console.log("reset");
@@ -44,12 +44,12 @@ function loginhandle() {
   console.log("username;", v_username);
   console.log("password_login:", v_passwordlogin);
   // So sánh thoog tin người dùng nhập với DB
- var user_DB =  JSON.parse(localStorage.getItem("user"));
- if (v_username == user_DB.v_email&& v_passwordlogin== user_DB.v_password) {
-    
- }
- else{
+  var user_DB = JSON.parse(localStorage.getItem("user"));
+  if (v_username == user_DB.v_email && v_passwordlogin == user_DB.v_password) {
+
+  }
+  else {
     alert("thông tin chưa chính xác");
     return;
- }
+  }
 }

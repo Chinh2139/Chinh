@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee manager</title>
+    <link rel="icon" href="./Employee.jpg" />
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+    />
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./DemoProject1.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <form action="" method="POST" role="form" id="form">
+              <legend>Quản Lý Nhân Viên</legend>
+              <!-- Tên -->
+              <div class="form-group">
+                <label for="">ID</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ID_ID"
+                  placeholder="Mời Nhập vào ID"
+                />
+              </div>
+              <!-- Họ -->
+              <div class="form-group">
+                <label for="">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Username_ID"
+                  placeholder="Mời Nhập vào Username"
+                />
+              </div>
+              <!-- Email -->
+              <div class="form-group">
+                <label for="">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Mời Nhập vào Email"
+                />
+              </div>
+              <!-- Select a Department -->
+              <div class="form-group">
+                <label for="">Select a Department:</label>
+
+                <select
+                  name=""
+                  id="Department_ID"
+                  class="form-control"
+                  required="required"
+                >
+                  <option value=""></option>
+                  <option value="">Accounting</option>
+                  <option value="">Business Develoment</option>
+                  <option value="">Engineering</option>
+                  <option value="">Human Resources</option>
+                  <option value="">Research and Develoment</option>
+                </select>
+              </div>
+              <!-- Select a Position -->
+              <div class="form-group">
+                <label for="">Select a Position</label>
+
+                <select
+                  name=""
+                  id="Position_ID"
+                  class="form-control"
+                  required="required"
+                >
+                  <option value=""></option>
+                  <option value="">Development</option>
+                  <option value="">Tester</option>
+                  <option value="">Scrum Master</option>
+                  <option value="">PM</option>
+                </select>
+              </div>
+              <!-- ngày tháng năm sinh -->
+              <div class="form-group">
+                <label for="">CreateDate</label>
+                <input type="date" class="form-control" />
+              </div>
+
+              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="submit" class="btn btn-warning">Edit</button>
+              <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <table class="table table-hover" id="table_ID">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Email</th>
+              <th>Username</th>
+              <th>Fullname</th>
+              <th>Department</th>
+              <th>Positon</th>
+              <th>CreateDate</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>email@gmail.com</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>
+                <button type="button" class="btn btn-warning">Edit</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </nav>
+    <script type="text/javaScript" src="./DemoProject1.js"></script>
+  </body>
+</html>

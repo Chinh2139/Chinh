@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(208, 237, 255);
+}
+legend {
+    font-size: xx-large;
+    text-align: center;
+}
+#container .title {
+  background-color: bisque;
+  text-align: center;
+}
